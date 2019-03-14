@@ -1,0 +1,22 @@
+{% extends "Scapp/base.html" %}
+{% block content %}
+    {% for sc in scooters %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ sc.s_pla }}</a>
+	      <a class="mr-4" href="#">{{ sc.s_plo }}</a>
+
+            </div>
+             
+
+		<a class="article-title" href="#">{{  sc.s_battery }}</a>%</h2> </p>
+		
+            <p class="article-content">{{ sc.s_city.city_name }}</p>
+	    <p class="article-content">{{ sc.s_availability }}</p>
+
+
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}

@@ -1,0 +1,10 @@
+{% extends "Scapp/base.html" %}
+{% block content %}
+    <table>
+<tr><th>Scooter ID</th><th>Battery</th><th>longtitude</th><th>lattitude</th><th>availability</th><th>city</th></tr>
+    {% for sl in s %}
+	<tr><th>{{sl.s_sid}}</th><th>{{sl.s_battery}}</th><th>{{sl.s_pla}}</th><th>{{sl.s_plo}}</th><th>{{sl.s_availability}}</th><th>{{sl.s_city.city_name}}</th></tr>
+    {% endfor %}
+    </table>
+<a class="nav-item nav-link" href="{% url 'rent_input' %}">rememmbered the scooterid</a>
+{% endblock content %}

@@ -1,0 +1,9 @@
+{% extends "Scapp/base.html" %}
+{% block content %}
+    <table>
+<tr><th>name</th><th>License ID</th></tr>
+    {% for charger in chargers %}
+	<tr><th>charger.c_name</th><th>charger.c_LID</th></tr>
+    {% endfor %}
+    </table>
+{% endblock content %}

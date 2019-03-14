@@ -1,0 +1,9 @@
+{% extends "Scapp/base.html" %}
+{% block content %}
+    <table>
+<tr><th>name</th><th>License ID</th><th>city</th></tr>
+    {% for rent in rents %}
+	<tr><th>rent.c_id</th><th>rent.s_id</th><th>rent.duration</th>/tr>
+    {% endfor %}
+    </table>
+{% endblock content %}

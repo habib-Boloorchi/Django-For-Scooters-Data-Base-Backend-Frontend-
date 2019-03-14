@@ -1,0 +1,9 @@
+{% extends "Scapp/base.html" %}
+{% block content %}
+    <table>
+<tr><th>NAME</th><th>PRICE</th><th>in USA</th></tr>
+    {% for ci in city %}
+	<tr><th>{{ci.city_name}}</th><th>{{ci.city_price}}</th><th>{{ci.in_the_usa}}</th></tr>
+    {% endfor %}
+    </table>
+{% endblock content %}
